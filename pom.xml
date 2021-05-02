@@ -184,7 +184,7 @@
         <spring-boot23.version>2.3.0.RELEASE</spring-boot23.version>
 
         <!-- webauthn support -->
-        <webauthn4j.version>0.12.0.RELEASE</webauthn4j.version>
+        <webauthn4j.version>0.16.0-SNAPSHOT</webauthn4j.version>
         <org.apache.kerby.kerby-asn1.version>2.0.0</org.apache.kerby.kerby-asn1.version>
 
     </properties>
@@ -212,6 +212,14 @@
             <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>oss-sonatype-snapshot-repository</id>
+            <name>OSS Sonatype Snapshot Repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
 
     <issueManagement>
         <system>JIRA</system>
