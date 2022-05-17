@@ -58,7 +58,6 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.hasSize;
@@ -275,7 +274,8 @@ public class WebAuthnPolicySettingsTest extends AbstractConsoleTest {
     public void attestationConveyancePreference() {
         // default not specified
         AttestationConveyancePreference attestation = getPolicyPage().getAttestationConveyancePreference();
-        assertThat(attestation, nullValue());
+        assertThat(attestation, notNullValue());
+        assertThat(attestation.getValue(), is(""));
 
         // Direct
         getPolicyPage().setAttestationConveyancePreference(AttestationConveyancePreference.DIRECT);
@@ -318,7 +318,8 @@ public class WebAuthnPolicySettingsTest extends AbstractConsoleTest {
     @Test
     public void authenticatorAttachment() {
         AuthenticatorAttachment attachment = getPolicyPage().getAuthenticatorAttachment();
-        assertThat(attachment, nullValue());
+        assertThat(attachment, notNullValue());
+        assertThat(attachment.getValue(), is(""));
 
         // Cross-platform
         getPolicyPage().setAuthenticatorAttachment(AuthenticatorAttachment.CROSS_PLATFORM);
@@ -387,7 +388,8 @@ public class WebAuthnPolicySettingsTest extends AbstractConsoleTest {
     @Test
     public void userVerification() {
         UserVerificationRequirement userVerification = getPolicyPage().getUserVerification();
-        assertThat(userVerification, nullValue());
+        assertThat(userVerification,notNullValue());
+        assertThat(userVerification.getValue(), is(""));
 
         // Preferred
         getPolicyPage().setUserVerification(UserVerificationRequirement.PREFERRED);
