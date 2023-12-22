@@ -39,8 +39,8 @@ importers:
         specifier: ^10.2.0
         version: 10.2.0(eslint@8.49.0)
       eslint-plugin-prettier:
-        specifier: ^5.0.0
-        version: 5.0.0(eslint-config-prettier@9.0.0)(eslint@8.49.0)(prettier@3.0.3)
+        specifier: ^5.1.1
+        version: 5.1.1(eslint-config-prettier@9.0.0)(eslint@8.49.0)(prettier@3.0.3)
       eslint-plugin-react:
         specifier: ^7.33.2
         version: 7.33.2(eslint@8.49.0)
@@ -3563,8 +3563,8 @@ packages:
       rambda: 7.5.0
     dev: true
 
-  /eslint-plugin-prettier@5.0.0(eslint-config-prettier@9.0.0)(eslint@8.49.0)(prettier@3.0.3):
-    resolution: {integrity: sha512-AgaZCVuYDXHUGxj/ZGu1u8H8CYgDY3iG6w5kUFw4AzMVXzB7VvbKgYR4nATIN+OvUrghMbiDLeimVjVY5ilq3w==}
+  /eslint-plugin-prettier@5.1.1(eslint-config-prettier@9.0.0)(eslint@8.49.0)(prettier@3.0.3):
+    resolution: {integrity: sha512-WQpV3mSmIobb77s4qiCZu3dBrZZ0rj8ckSfBtRrgNK9Wnh2s3eiaxNTWloz1LJ1WtvqZES/PAI7PLvsrGt/CEA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
@@ -6869,7 +6869,7 @@ packages:
       '@types/node': 20.6.5
       esbuild: 0.18.20
       postcss: 8.4.28
-      rollup: 3.29.4
+      rollup: 3.29.3
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
